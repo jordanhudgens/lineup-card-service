@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :teams
   resources :sessions, only: [:create]
   resources :registrations, only: [:create]
   delete :logout, to: "sessions#logout"
